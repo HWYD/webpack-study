@@ -17,7 +17,25 @@ module.exports ={
               limit:'204800'
             }
           }
-        }
+        },
+		{
+		  test:/\.(eot|ttf|svg)$/,
+		  use:{
+		    loader:'file-loader',
+		  }
+		},
+		{
+		  test:/\.css$/,
+		  use:['style-loader',
+		  {
+			  loader:'css-loader',
+			  options:{
+				  importLoaders:1,
+			  }
+		  },
+		  'postcss-loader'
+		  ]
+		}
       ]
     },
     output: {
