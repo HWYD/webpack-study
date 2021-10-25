@@ -1,0 +1,36 @@
+body{
+  .theimg{
+		width: 150px;
+		height: 150px;
+		transform: translate(100px,100px);
+}
+}
+
+@font-face {
+  font-family: "iconfont"; /* Project id 2889289 */
+  src: url('./font/iconfont.ttf?t=1635151697635') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-duijujilu:before {
+  content: "\e60f";
+}
+
+.icon-time:before {
+  content: "\e618";
+}
+
+
+
+
+
+
+
+
