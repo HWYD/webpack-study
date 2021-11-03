@@ -60,7 +60,7 @@ module.exports = {
     splitChunks:{
       chunks: 'all',
       cacheGroups: {
-        vendors:false,
+        vendors:true,
         default: false
       },
     }
